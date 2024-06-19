@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..\CSS/School.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidebar {
+            margin: 0;
+            padding: 0;
+            width: 300px;
+            background-color: #f1f1f1;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+
+        .sidebar a {
+            display: block;
+            color: black;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        /* .sidebar a.active {
+          background-color: #04AA6D;
+          color: white;
+        }
+        
+        .sidebar a:hover:not(.active) {
+          background-color: #555;
+          color: white;
+        } */
+
+        div.content {
+            margin-left: 200px;
+            padding: 1px 16px;
+            height: 1000px;
+        }
+
+        @media screen and (max-width: 700px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .sidebar a {
+                float: left;
+            }
+
+            div.content {
+                margin-left: 0;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .sidebar a {
+                text-align: center;
+                float: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <a>
+            <div class="contact">
+                <h2>Contact</h2>
+                <p>Contact of the school</p>
+            </div>
+        </a>
+        <hr>
+        <a>
+            <div class="address">
+                <h2>Address</h2>
+                <p>Address of the school</p>
+            </div>
+        </a>
+        <hr>
+
+        <a>
+            <div class="map">
+                <h2>Map</h2>
+                <p>Map of the school</p>
+            </div>
+        </a>
+        <hr>
+        <a>
+            <div class="notable-achievements">
+                <h2>Notable Achievements</h2>
+                <p>Notable Achievements of the school</p>
+            </div>
+        </a>
+        <hr>
+        <a>
+            <div class="ranking">
+                <h2>Ranking</h2>
+                <p>Ranking of the school</p>
+            </div>
+
+        </a>
+    </div>
+
+   
+
+
+    <div class="title">
+        <h1>School Name</h1>
+        <h3>School type</h3>
+    </div>
+
+    <hr>
+
+    <div class="intro">
+        <h2>Introduction</h2>
+        <p>Introduction of the school</p>
+        <h2>History</h2>
+        <p>History of the school</p>
+        <h2>Overview</h2>
+        <p>Overview of the school</p>
+    </div>
+
+    <div class="info">
+        <div class="curriculum">
+            <h2>Curriculum</h2>
+            <p>Curriculum of the school</p>
+        </div>
+
+        <div class="fee">
+            <h2>Fee</h2>
+            <p>Fee of the school</p>
+        </div>
+
+        <div class="faculty">
+            <h2>Faculty</h2>
+            <p>Faculty of the school</p>
+        </div>
+
+        <div class="facility">
+            <h2>Facilities</h2>
+            <p>Facilities of the school</p>
+        </div>
+
+        <!--- Optional -->
+        <div class="activities">
+            <h2>Activities</h2>
+            <p>Activities of the school</p>
+        </div>
+
+        <div class="admission">
+            <h2>Admission</h2>
+            <p>Admission of the school</p>
+        </div>
+
+        <!--- Optional -->
+        <div class="academic">
+            <h2>Academic</h2>
+            <p>Academic of the school</p>
+        </div>
+
+        <!--- Optional -->
+        <div class="news">
+            <h2>News</h2>
+            <p>News of the school</p>
+        </div>
+
+        <!--- Optional -->
+        <div class="events">
+            <h2>Events</h2>
+            <p>Events of the school</p>
+        </div>
+
+        <div class="FAQ">
+            <h2>FAQ</h2>
+            <p>FAQ of the school</p>
+        </div>
+
+        <div class="review">
+            <h2>Review</h2>
+            <p>Review of the school</p>
+        </div>
+
+        <div class="classes-btn">
+            <button>Classes</button>
+        </div>
+
+        <div class="extracurricular-btn">
+            <button>Extracurriculars</button>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
