@@ -15,7 +15,7 @@
     align-items: center;
     background-color: aqua;
     text-align: center;
-    height: 600px;
+    height: 250px;
 }
 
 .intro{
@@ -38,6 +38,63 @@
     color: #333;
     margin-top: -50px;
 }
+
+.curriculum {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    text-align: center;
+    background-image: url(https://www.challengerschool.com/themes/challenger/assets/build/img/video_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 30px;
+    color: white;
+    line-height: 30px;
+   
+}
+
+.CP{
+    width: 400px;
+}
+
+.admission {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(175deg, #0b3526 0%, #032d1f 25%, #0f553e 50%, #256f56 75%, #51a085 100%);
+    width: 100%;
+    padding: 30px;
+    color: white;
+    line-height: 30px;
+
+}
+
+.admissionP{
+    width: 400px;
+}
+
+.academic{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #d8d2b8;
+    width: 100%;
+    padding: 30px;
+    color: black;
+    line-height: 30px;
+}
+
+.academicP{
+    width: 400px;
+}
+
 
 
 
