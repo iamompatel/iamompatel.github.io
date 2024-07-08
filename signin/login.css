@@ -1,30 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In</title>
-</head>
-<body>
-    <div>
-    <h1>Log In</h1>
-    <form>
-        <label class="input"><b>Username</b></label><br>
-        <input name="Username"><br>
-        <br>
-        <label class="input"><b>Password</b></label><br>
-        <input name="Password"><br>
-        <br>
-        <button class="button">Submit</button>
-        <button class="button">Clear</button>
-    </form>
-    <p>
-        <u class="text">Forgot your password?</u>
-    </P>
-    <p>
-        <b class="text">Don't have an account? <a href="createaccount.html">Sign up</a></b>
-    </p>
-<style>
     .input {
         font-size: large;
         font-variant:inherit;
@@ -63,7 +36,3 @@
         font-style: inherit;
         font-size: medium;
     }
-    </style>
-    </div>
-</body>
-</html>
