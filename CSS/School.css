@@ -158,11 +158,12 @@ body.dark .admission{
     flex-direction: row;
     align-items: center;
     text-align: center;
-    background-color: white;
+    background-color: #f0eee8;
     width: 100%;
     padding: 30px;
     color: black;
     line-height: 30px;
+    height: 200px;
 }
 
 body.dark .fee{
@@ -191,29 +192,9 @@ body.dark .fee{
     padding-bottom: 20px;
 }
 
+
+
 .Address{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #f0eee8;
-    width: 100%;
-    padding: 30px;
-    color: #00598c;
-    line-height: 30px;
-}
-
-body.dark .Address{
-    background-color: #0b2635;
-    color: white;
-}
-
-.addressP{
-    width: 400px;
-}
-
-.notable_achievements{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -226,12 +207,12 @@ body.dark .Address{
     line-height: 30px;
 }
 
-body.dark .notable_achievements{
+body.dark .Address{
     background: linear-gradient(180deg, #005587 0%, #2774AE 100%);
     color: white;
 }
 
-.notable_achievementsP{
+.addressP{
     width: 400px;
 }
 
