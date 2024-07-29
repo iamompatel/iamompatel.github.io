@@ -88,6 +88,7 @@ body.dark .contactI{
     border-radius: 50px;
     padding: 50px;
     background-color: #f0eee8;
+    width: 300px;
 }
 
 body.dark .Principal{
@@ -113,12 +114,25 @@ body.dark .receptionist{
     border-radius: 50px;
     padding: 50px;
     background-color: #f0eee8;
+    width: 300px;
 }
 
 .receptionist{
     border-style: double;
     padding-left: 20px;
     padding-right: 20px;
+    margin-right: 100px;
+    border-radius: 50px;
+    padding: 50px;
+    background-color: #f0eee8;
+    width: 300px;
+}
+
+.Phone{
+    border-style: double;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 300px;
     border-radius: 50px;
     padding: 50px;
     background-color: #f0eee8;
@@ -214,6 +228,13 @@ body.dark .Address{
 
 .addressP{
     width: 400px;
+}
+
+.teachers h2{
+    margin-bottom: 8px;
+}
+.teachers h3{
+    margin-bottom: 8px;
 }
 
   /*font-family: "Lato", sans-serif;*/
