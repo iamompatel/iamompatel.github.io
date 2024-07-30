@@ -5,6 +5,7 @@
   <title>Schoolify home page</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../CSS/Home.css">
+  <script src="../JavaScript/Home.js" defer></script>
   <style>
     @media screen and (max-width: 600px) {
       .topnav .search-container {
@@ -37,23 +38,25 @@
   <a href="#contact">Contact</a>
   <a href="#home">Profile</a>-->
   <div class="search-container">
-    <input type="text" placeholder="Search for schools" name="search">
+    <input type="search" id="search" placeholder="Search for schools" data-search >
     <button type="submit"><i class="fa fa-search"></i></button>
   </div>
 
 
 
-  <div class="all_skills">
+  <div class="user-cards" data-user-cards-container></div>
 
-    <button class="CASLV">
+  <template data-user-template>
+     <!-- <button> -->
       <div class="skill">
-        <img src="../Img/CASLV-Logo.png" alt="">
-        <h2>Coral Academy of Science Las Vegas</h2>
-        <p>#Science</p>
+        <img src="../Img/Logos/A-TECH.jpg" alt="">
+        <div class="header" data-header></div>
+        <div class="body" data-body></div>
       </div>
-    </button>
+    <!--</button>-->
+  </template>
 
-    <button class="A-TECH">
+    <!--<button class="A-TECH">
       <div class="skill">
         <img src="../Img/Logos/A-TECH.jpg" alt="">
         <h2>Advanced Technologies Academy</h2>
@@ -76,8 +79,7 @@
         <p>#Science</p>
       </div>
     </button>
-    <!-- Add more schools here -->
-
+    
 
   </div>
 
@@ -114,7 +116,7 @@
         <p>#Science</p>
       </div>
     </button>
-    <!-- Add more schools here -->
+    
 
 
   </div>
@@ -152,8 +154,7 @@
         <p>#Science</p>
       </div>
     </button>
-    <!-- Add more schools here -->
-
+    
 
   </div>
 
@@ -190,8 +191,7 @@
         <p>#Science</p>
       </div>
     </button>
-    <!-- Add more schools here -->
-
+    
 
   </div>
 
@@ -205,7 +205,7 @@
       </div>
     </button>
 
-    <button class="RANCHO"><!--We could also name it 3IDIOTS if you want-->
+    <button class="RANCHO">
       <div class="skill">
         <img src="../Img/Logos/Rancho.png" alt="">
         <h2>Rancho High School</h2>
@@ -228,8 +228,7 @@
         <p>#Science</p>
       </div>
     </button>
-    <!-- Add more schools here -->
-
+    
 
   </div>
 
@@ -266,7 +265,7 @@
         <p>#Science</p>
       </div>
     </button>
-    <!-- Add more schools here -->
+   
 
 
   </div>
@@ -304,7 +303,7 @@
         <p>#Science</p>
       </div>
     </button>
-    <!-- Add more schools here -->
+    
 
 
   </div>
@@ -342,8 +341,7 @@
         <p>#Science</p>
       </div>
     </button>
-    <!-- Add more schools here -->
-
+   
 
   </div>
 
@@ -380,7 +378,7 @@
         <p>#Science</p>
       </div>
     </button>
-    <!-- Add more schools here -->
+    
 
 
   </div>
@@ -418,7 +416,7 @@
         <p>#Science</p>
       </div>
     </button>
-    <!-- Add more schools here -->
+    
 
 
   </div>
@@ -457,7 +455,7 @@
         <p>#Science</p>
       </div>
     </button>
-    <!-- Add more schools here -->
+    
 
 
   </div>
@@ -495,7 +493,7 @@
         <p>#Science</p>
       </div>
     </button>
-    <!-- Add more schools here -->
+    
 
 
   </div>
@@ -526,14 +524,14 @@
       </div>
     </button>
 
-    <button class="CCDC">
+    <button class="SANDY">
       <div class="skill">
-        <h2>Clark County Detention Center J-Shs</h2>
+        <img src="../Img/Logos/Sandy.png" alt="">
+        <h2>Sandy Valley Jr/Sr High School</h2>
         <p>#Science</p>
       </div>
     </button>
-    <!-- Add more schools here -->
-
+   
 
   </div>
 
@@ -547,9 +545,10 @@
       </div>
     </button>
 
-    <button class="COWAN">
+    <button class="SAC">
       <div class="skill">
-        <h2>Cowan Academic Center J-Shs</h2>
+        <img src="../Img/Logos/sac.png" alt="">
+        <h2>South Academic Center J-Shs</h2>
         <p>#tech</p>
       </div>
     </button>
@@ -569,7 +568,7 @@
         <p>#Science</p>
       </div>
     </button>
-    <!-- Add more schools here -->
+   
 
 
   </div>
@@ -607,7 +606,7 @@
         <p>#Science</p>
       </div>
     </button>
-    <!-- Add more schools here -->
+   
 
 
   </div>
@@ -622,16 +621,18 @@
       </div>
     </button>
 
-    <button class="JD">
+    <button class="SM">
       <div class="skill">
-        <h2>Juvenile Detention 6-12 J-Shs</h2>
-        <p>#tech</p>
+        <img src="../Img/Logos/SM.webp" alt="">
+        <h2>Spring Mountain J-Shs</h2>
+        <p>#Science</p>
       </div>
     </button>
 
-    <button class="Miley">
+    <button class="STEWART">
       <div class="skill">
-        <h2>Miley Achievement Center J-Shs</h2>
+        <img src="../Img/Logos/Stewart.png" alt="">
+        <h2>Stewart Helen J Elementary School</h2>
         <p>#Science</p>
       </div>
     </button>
@@ -643,8 +644,7 @@
         <p>#Science</p>
       </div>
     </button>
-    <!-- Add more schools here -->
-
+    
 
   </div>
 
@@ -681,52 +681,15 @@
         <p>#Science</p>
       </div>
     </button>
-    <!-- Add more schools here -->
-
-
-  </div>
-
-  <div class="all_skills">
-
-    <button class="SANDY">
-      <div class="skill">
-        <img src="../Img/Logos/Sandy.png" alt="">
-        <h2>Sandy Valley Jr/Sr High School</h2>
-        <p>#Science</p>
-      </div>
-    </button>
-
-    <button class="SAC">
-      <div class="skill">
-        <img src="../Img/Logos/sac.png" alt="">
-        <h2>South Academic Center J-Shs</h2>
-        <p>#tech</p>
-      </div>
-    </button>
-
-    <button class="SM">
-      <div class="skill">
-        <img src="../Img/Logos/SM.webp" alt="">
-        <h2>Spring Mountain J-Shs</h2>
-        <p>#Science</p>
-      </div>
-    </button>
-
-    <button class="STEWART">
-      <div class="skill">
-        <img src="../Img/Logos/Stewart.png" alt="">
-        <h2>Stewart Helen J Elementary School</h2>
-        <p>#Science</p>
-      </div>
-    </button>
-    <!-- Add more schools here -->
-
+    
 
   </div>
 
+-->
 
 
-  <hr>
+
+
 
 
 </body>
