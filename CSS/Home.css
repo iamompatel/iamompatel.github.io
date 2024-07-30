@@ -31,12 +31,7 @@ body {
   background: #ccc;
 }
 
-.all_skills {
-margin: 34px;
-display: flex;
-justify-content: center;
-align-items: center;
-}
+
 
 
 
@@ -72,9 +67,10 @@ align-items: center;
   display: block;
 }
 
-template button {
+.schoolBTN {
   background-color: white;
   border: none;
+  margin-left: 25px;
 }
 
 button :hover{
