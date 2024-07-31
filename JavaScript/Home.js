@@ -13,7 +13,7 @@ searchInput.addEventListener("input", (e) =>{
     })
 })
 
-fetch("https://script.googleusercontent.com/macros/echo?user_content_key=p79Mpieu_XMKji8JTdpF7NslHbOgF2OjSeMovblCKHpGjoObSgzu5sPVmOMyT6uMTJN_qNZL8TzWbd3h3sTmUQHqiqgvANyNm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnF9BgOB2-GvL2xvozhIfCoCXRtDRpo03dP-dDButG6uB2PGmG2HJ-xJr9_Ndd7VfRO-1E7qbHytgXsHj9wCIwCYmQcTCEFj7nQ&lib=MGyzfp4jlAaTA2-OTV99yUiGR0zf_cVsI")
+fetch("https://script.googleusercontent.com/macros/echo?user_content_key=E4T92Sgp0bRUkEx-fBWo6nc3-I0m4opxCUwdTpN6buDjrtVgMkEJ1tm6215fZhy7-6F7-3GKqCBc0Ehde48uwD_V3nl1wOrwm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnKYcuUClqqyRLzT9GUkYnM_XVJblVz1rr97237XPfM-d2DCLNve_pjo5ql-xEL2OwMdNWAXlVAQsygF2WNFPcMLx2nNMOLeTPA&lib=MGyzfp4jlAaTA2-OTV99yUiGR0zf_cVsI")
     .then(res => res.json())
     .then(data => {
         values = Object.values(data);
@@ -25,9 +25,9 @@ fetch("https://script.googleusercontent.com/macros/echo?user_content_key=p79Mpie
             const header = card.querySelector("[data-header]")
             const body = card.querySelector("[data-body]")
             header.textContent = user.Name
-            body.textContent = user.Type
+            body.textContent = user.Ranking
             userCardContainer.appendChild(card)
-            return {Name: user.Name, Type: user.Type, element: card}
+            return {Name: user.Name, Type: user.Ranking, element: card}
         })
     
 
