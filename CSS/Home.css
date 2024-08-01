@@ -46,6 +46,7 @@ body {
   padding-left: 30px;
   padding-right:30px ;
   border-radius: 28px;
+  background-color: #99d8f1;
 }
 
 .header {
@@ -61,7 +62,7 @@ body {
 }
 
 .skill img {
-  width: 100px;
+  width: 150px;
   height: 100px;
   margin: auto;
   display: block;
