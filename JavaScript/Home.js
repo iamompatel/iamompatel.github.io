@@ -13,7 +13,7 @@ searchInput.addEventListener("input", (e) =>{
     })
 })
 
-fetch("https://script.googleusercontent.com/macros/echo?user_content_key=hRqrVxf3MnxcwihZt8wvwcySwjN2hyMAAZWkmgv8LuHkFj5flxAjcCxbZxfwT1dzFlAhdqTKqS0IMJa9DFQ1lcHNVVCxg4dDm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnHzDMuwdtJqnrRDr3A3fr68Pe0VCrStoQw5z0SlUsbIwWL3sRn5aG8rLm1JVau6cD2fYuUsd60DjfHQo2EfO8B46YNJZ_0SwQQ&lib=MGyzfp4jlAaTA2-OTV99yUiGR0zf_cVsI")
+fetch("https://script.googleusercontent.com/macros/echo?user_content_key=qsTmMb9kdro-kuaPB7rTBI_s1eMz7azsoC54y88mHFBm5vnKNc57B4wpeZXyRKTHaVXrL88dCICO8eyLW89mwYxrzS0KSBDKm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnORb0C1XZ9riLfNfSvL72XIoOz_ESLeOaGsk5vzODKmu1g2KQnYXP8TVn9hPDWxZ7OXm829vWd6Y9V9IaThGHV_9kxNZCLhIjg&lib=MGyzfp4jlAaTA2-OTV99yUiGR0zf_cVsI")
     .then(res => res.json())
     .then(data => {
         values = Object.values(data);
@@ -28,6 +28,7 @@ fetch("https://script.googleusercontent.com/macros/echo?user_content_key=hRqrVxf
             header.textContent = user.Name
             body.textContent = user.Ranking
              IMG.src = user.Images
+             IMG.id = user.ID
       
             userCardContainer.appendChild(card)
             return {Name: user.Name, Type: user.Ranking, element: card}
