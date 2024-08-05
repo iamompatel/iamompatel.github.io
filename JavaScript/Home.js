@@ -5,9 +5,9 @@ const searchInput = document.querySelector("[data-search]")
 let users = []
 
 searchInput.addEventListener("input", (e) =>{
-    const value = e.target.value
+    const value = e.target.value.toLowerCase()
     users.forEach(user =>{
-        const isVisible = user.Name.includes(value) || user.Type.includes(value)
+        const isVisible = user.Name.toLowerCase().includes(value) || user.Type.toLowerCase().includes(value)
         //user.element.classList.toggle("hide", !isVisible)
         user.element.classList.toggle("hide", !isVisible)
     })
