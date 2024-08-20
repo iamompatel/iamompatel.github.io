@@ -13,11 +13,11 @@ searchInput.addEventListener("input", (e) =>{
     })
 })
 
-fetch("https://script.googleusercontent.com/macros/echo?user_content_key=qsTmMb9kdro-kuaPB7rTBI_s1eMz7azsoC54y88mHFBm5vnKNc57B4wpeZXyRKTHaVXrL88dCICO8eyLW89mwYxrzS0KSBDKm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnORb0C1XZ9riLfNfSvL72XIoOz_ESLeOaGsk5vzODKmu1g2KQnYXP8TVn9hPDWxZ7OXm829vWd6Y9V9IaThGHV_9kxNZCLhIjg&lib=MGyzfp4jlAaTA2-OTV99yUiGR0zf_cVsI")
+fetch("https://script.google.com/macros/s/AKfycbyPSv7lOXmZLAXTgiKGizp0SyKitEI5U5oVhz-A8MFpggofoXmx--RHiT3Ms2Am-9A_/exec")
     .then(res => res.json())
     .then(data => {
         values = Object.values(data);
-       // users = values[0]
+       // users = values[0]b  
      //for (const user of values[0])
      users = values[0].map(user => 
         {
@@ -25,10 +25,12 @@ fetch("https://script.googleusercontent.com/macros/echo?user_content_key=qsTmMb9
             const header = card.querySelector("[data-header]")
             const body = card.querySelector("[data-body]")
             const IMG = card.querySelector("[data-img]")
+            const schoolBTN = card.querySelector("[data-btn]")
             header.textContent = user.Name
             body.textContent = user.Ranking
              IMG.src = user.Images
              IMG.id = user.ID
+            schoolBTN.id = user.ID
       
             userCardContainer.appendChild(card)
             return {Name: user.Name, Type: user.Ranking, element: card}
@@ -38,3 +40,16 @@ fetch("https://script.googleusercontent.com/macros/echo?user_content_key=qsTmMb9
    
 
 })
+
+
+
+
+async function schoolNameClicked(ID){
+       console.log(ID);
+    //    url = ("http://127.0.0.1:5500/HTML/school.html?ID=" + ID);
+    //    document.location.href = url;
+    window.location.href = "school.html?ID=" + ID.id;
+ 
+}
+
+ 
