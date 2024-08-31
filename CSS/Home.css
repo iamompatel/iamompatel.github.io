@@ -5,10 +5,35 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+p.one {
+  word-spacing: 300px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  height: 5px;
+  background-color: #ffffff;
+  color: rgb(1, 5, 105);
+  text-align: center;
+}
+
+#blank {
+  color:#ffffff;
+}
+
+#name {
+  background-color: #c3d8ff;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+  height: 100px;
+  color: rgb(1, 5, 105);
+  border-bottom: black;
+}
+
+
 .search-container {
   display: flex;
   overflow: hidden;
-  background-color: #99d8f1;
+  background-color: #bbd1fa;
   justify-content: center;
   height: 100px;
   padding: 10px;
@@ -19,16 +44,18 @@ body {
   height: 40px;
   font-size: 17px;
   padding: 6px;
+  background-color: blue;
 }
 
 .search-container button{
   margin-left: 10px;
   height: 40px;
   width: 40px;
+  background-color: #ffffff;
 }
 
 .search-container button:hover {
-  background: #ccc;
+  background: #ffffff;
 }
 
 
@@ -36,7 +63,7 @@ body {
 
 
 .skill {
-  border: 2px solid brown;
+  border: 2px solid rgb(118, 165, 254);
   height: 250px;
   width: 350px;
   margin: 40px;
@@ -46,19 +73,19 @@ body {
   padding-left: 30px;
   padding-right:30px ;
   border-radius: 28px;
-  background-color: #99d8f1;
+  background-color: rgb(255, 255, 255);
 }
 
 .header {
   text-align: center;
   font-size: 20px;
-  color: brown;
+  color: rgb(1, 5, 105);
 }
 
 .body {
   text-align: center;
   font-size: 15px;
-  color: brown;
+  color: rgb(1, 5, 105);
 }
 
 .skill img {

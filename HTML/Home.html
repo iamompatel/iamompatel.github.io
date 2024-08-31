@@ -2,41 +2,26 @@
 <html>
 
 <head>
-  <title>Schoolify home page</title>
+  <title>School Scout</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../CSS/Home.css">
   <script src="../JavaScript/Home.js" defer></script>
-  <style>
-    @media screen and (max-width: 600px) {
-      .topnav .search-container {
-        float: none;
-      }
-
-      .topnav a,
-      .topnav input[type=text],
-      .topnav .search-container button {
-        float: none;
-        display: block;
-        text-align: left;
-        width: 100%;
-        margin: 0;
-        padding: 14px;
-      }
-
-      .topnav input[type=text] {
-        border: 1px solid #ccc;
-      }
-    }
-  </style>
+  
 </head>
 
 <body>
 
-  <!--<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
-  <a href="#home">Profile</a>-->
+  
+  <p class="one">
+    Home About Contact Profile
+  </p>
+
+  <div id="name">
+    <p>
+      School Scout
+    </p>
+  </div>
+  
   <div class="search-container">
     <input type="search" id="search" placeholder="Search School or Rank" data-search >
     <button type="submit"><i class="fa fa-search"></i></button>
@@ -60,6 +45,29 @@
 </a>
   </template>
 
+  <style>
+    @media screen and (max-width: 600px) {
+      .topnav .search-container {
+        float: none;
+      }
+
+      .topnav a,
+      .topnav input[type=text],
+      .topnav .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+        color: rgb(13, 255, 0);
+      }
+
+      .topnav input[type=text] {
+        border: 1px solid #ccc;
+      }
+    }
+  </style>
 
 </body>
 
