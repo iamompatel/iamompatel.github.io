@@ -41,9 +41,6 @@ fetch("https://script.google.com/macros/s/AKfycbyPSv7lOXmZLAXTgiKGizp0SyKitEI5U5
 
 })
 
-
-
-
 async function schoolNameClicked(ID){
        console.log(ID);
     //    url = ("http://127.0.0.1:5500/HTML/school.html?ID=" + ID);

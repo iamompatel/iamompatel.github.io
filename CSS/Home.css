@@ -5,15 +5,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-p.one {
-  word-spacing: 300px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 20px;
-  height: 5px;
-  background-color: #ffffff;
-  color: rgb(1, 5, 105);
-  text-align: center;
-}
 
 #blank {
   color:#ffffff;
@@ -24,9 +15,11 @@ p.one {
   text-align: center;
   font-size: 50px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
-  height: 100px;
   color: rgb(1, 5, 105);
   border-bottom: black;
+  margin-top: -46px;
+  padding: 25px;
+  
 }
 
 
