@@ -42,6 +42,9 @@ window.onload = function() {
 
                         const Address = document.querySelector(".addressP")
                         Address.textContent = user.Address
+
+                        const Phone = document.querySelector(".contactIP")
+                        Phone.textContent = user.Phone
                         
                     })
  } )
