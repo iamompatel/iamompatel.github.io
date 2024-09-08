@@ -36,7 +36,7 @@ async function submit() {
       values = Object.values(data);
       console.log(data);
 
-      if (data.data.length !== 0 || username === data.data[0].Username) {
+      if (data.data.length !== 0 && username === data.data[0].Username) {
         alert("User already Exists try again!!!");
         window.location.href = "Sign-in.html";
       } else {
