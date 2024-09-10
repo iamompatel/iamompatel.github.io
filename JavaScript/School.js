@@ -14,9 +14,9 @@ window.onload = function() {
      schoolID = params["ID"];
 
 
-    var link1 = "https://script.google.com/macros/s/AKfycbyPSv7lOXmZLAXTgiKGizp0SyKitEI5U5oVhz-A8MFpggofoXmx--RHiT3Ms2Am-9A_/exec?ID=" + schoolID;
+    var link1 = "https://script.google.com/macros/s/AKfycbxT7QQjG0bmgQhDnV-bCh8J25ToXyjSdcOnoRDcOKFWvVrfYaZAoJJP05TZMXV8_PTE/exec?ID=" + schoolID;
  console.log(link1);
- fetch("https://script.google.com/macros/s/AKfycbyPSv7lOXmZLAXTgiKGizp0SyKitEI5U5oVhz-A8MFpggofoXmx--RHiT3Ms2Am-9A_/exec?ID=" + schoolID)
+ fetch("https://script.google.com/macros/s/AKfycbxT7QQjG0bmgQhDnV-bCh8J25ToXyjSdcOnoRDcOKFWvVrfYaZAoJJP05TZMXV8_PTE/exec?ID=" + schoolID)
     .then(res => res.json())
     .then(data => {
         values = Object.values(data);

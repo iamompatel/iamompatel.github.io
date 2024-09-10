@@ -13,7 +13,7 @@ searchInput.addEventListener("input", (e) =>{
     })
 })
 
-fetch("https://script.google.com/macros/s/AKfycbyPSv7lOXmZLAXTgiKGizp0SyKitEI5U5oVhz-A8MFpggofoXmx--RHiT3Ms2Am-9A_/exec")
+fetch("https://script.google.com/macros/s/AKfycbxT7QQjG0bmgQhDnV-bCh8J25ToXyjSdcOnoRDcOKFWvVrfYaZAoJJP05TZMXV8_PTE/exec")
     .then(res => res.json())
     .then(data => {
         values = Object.values(data);
