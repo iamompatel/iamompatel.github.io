@@ -60,6 +60,7 @@ fetch(API_SCHOOL_URL)
         Rank: user.Ranking,
         Zip: user.Zip,
         Type: user.Type,
+        ID: user.ID,
         element: card,
       };
     });
@@ -140,6 +141,29 @@ async function Typeclicked() {
           alert("No schools found with this type");
         }
         console.log(type);
+      });
+    });
+}
+
+async function Historyclicked() {
+  var history = "";
+  fetch(API_SIGN_URL + "?Username=" + Username)
+    .then((res) => res.json())
+    .then((data) => {
+      values = Object.values(data);
+
+      values[0].forEach((user) => {
+        history = user.History;
+        // const isVisible = user.ID.toString() === history;
+        const userObj = users.find((u) => u.ID === history); // Find the user object
+        if (userObj) {
+          users.forEach((u) => {
+            u.element.classList.toggle("hide", u.ID !== history);
+          });
+        } else {
+          alert("No schools found with this ID");
+        }
+        console.log(history);
       });
     });
 }
