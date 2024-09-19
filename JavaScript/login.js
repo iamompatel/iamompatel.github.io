@@ -28,7 +28,7 @@ async function submit(){
     
 
     //fectch username and password from the database 
-    fetch("https://script.google.com/macros/s/AKfycbw4Nn0G9COu37MQeVMDt2hynl2rU9GH_yzxLCikpz2UbBuFonO5tbJd-EM3FPH9TSqP/exec?Username=" + username)
+    fetch(API_SIGN_URL + "?Username=" + username)
     .then(res => res.json())
     .then(data => {
         values = Object.values(data);
@@ -36,12 +36,14 @@ async function submit(){
         
         if(data.data.length!==0 && username === data.data[0].Username && password === data.data[0].Password){
             console.log("Login successful");
-            window.location.href = "Home.html";
+            window.location.href = "Home.html?Username=" + username;
         }
         else
         {
             alert("Login failed");
         }
+
+
 
         // if(username === values[0][0].Username && password === values[0][0].Password){
         //     console.log("Login successful");
@@ -54,4 +56,5 @@ async function submit(){
 })
 
 }
+
 

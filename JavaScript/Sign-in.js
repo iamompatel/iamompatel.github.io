@@ -1,3 +1,4 @@
+
 async function submit() {
   console.log("submit");
 
@@ -27,8 +28,21 @@ async function submit() {
     window.location.href = "Sign-in.html";
   }
 
+  //grab zip code
+  var zip = document.getElementById("zip").value;
+  console.log(zip);
+
+  //grab type
+  var type = document.getElementById("type").value;
+
+  //grab Email
+  var Email = document.getElementById("email").value;
+
+  //Grab Date
+  // var Date = document.getElementById("Date").value
+
   fetch(
-    "https://script.google.com/macros/s/AKfycbw4Nn0G9COu37MQeVMDt2hynl2rU9GH_yzxLCikpz2UbBuFonO5tbJd-EM3FPH9TSqP/exec?Username=" +
+    API_SIGN_URL + "?Username=" +
       username
   )
     .then((res) => res.json())
@@ -42,8 +56,14 @@ async function submit() {
       } else {
         let form = document.querySelector("form");
         let data = new FormData(form);
+        // Grab the current date
+        var joinDate = new Date().toISOString().split("T")[0]; // Format: YYYY-MM-DD
+
+        // Append the join date to the FormData
+        data.append("date", joinDate);
+        data.append("history", "none");
         fetch(
-          "https://script.google.com/macros/s/AKfycbw4Nn0G9COu37MQeVMDt2hynl2rU9GH_yzxLCikpz2UbBuFonO5tbJd-EM3FPH9TSqP/exec",
+          API_SIGN_URL,
           {
             method: "POST",
             body: data,
@@ -51,25 +71,7 @@ async function submit() {
         )
           .then((res) => res.text())
           .then((data) => console.log(data));
-          window.location.href = "Home.html";
+          window.location.href = "Home.html?Username=" + username;
       }
     });
 }
-//  let form = document.querySelector("form");
-//     form.addEventListener('submit', (e) => {
-//         e.preventDefault();
-//         let data = new FormData(form);
-//         fetch('https://script.google.com/macros/s/AKfycbw4Nn0G9COu37MQeVMDt2hynl2rU9GH_yzxLCikpz2UbBuFonO5tbJd-EM3FPH9TSqP/exec', {
-//             method: 'POST',
-//             body: data
-//         })
-//             .then(res => res.text())
-//             .then(data => console.log(data));
-
-//     });
-//     var form = document.getElementById("form");
-// form.addEventListener("submit", e =>{
-//     method : "POST";
-//     // body: new FormData(document.getElementById("sheetdb-form"));
-
-// });
