@@ -1,126 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="review.css">
 
-<head>
-    <title>Digital Footprint</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="jquery.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+        <style>
+            #respond {
+    margin-top: 40px;
+  }
+  
+  #respond input[type='text'],
+  #respond input[type='email'],
+  #respond textarea {
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+  
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+  
+    line-height: 1.4em;
+  }
+        </style>
+    </head>
+    <body>
+        <div id="respond">
 
-<body class="w3-theme-l5">
-
-<!-- Page Container -->
-    <div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
-        <!-- The Grid -->
-        <div class="w3-row">
-            <!-- Left Column -->
-            <div class="w3-col m3">
-                <!-- Profile -->
-                <div class="w3-card w3-round w3-white">
-                    <div class="w3-container">
-                        <h4 class="w3-center">My Profile</h4>
-                        <p class="w3-center">
-                            <img src="https://cdn.pixabay.com/photo/2016/03/31/14/47/avatar-1292817_960_720.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar">
-                        </p>
-                        <hr>
-                        <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Student at CodeHS</p>
-                        <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> San Francisco, CA</p>
-                        <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> April 1, 2004</p>
-                    </div>
-                </div>
-                <br>
-     
-        
-
-   
-        <!-- Middle Column -->
-        <div class="w3-col m7">
-   
-            <div class="w3-row-padding">
-                <div class="w3-col m12">
-                    <div class="w3-card w3-round w3-white">
-                        <div class="w3-container w3-padding">
-                           
-                            <!-- Write a post -->
-                            <h6 class="w3-opacity">Write a post</h6>
-                            <input type="text" id="text1" class="w3-border w3-padding">
-                            </input>
-                            <button onclick="add_element_to_array();" type="button" class="w3-button w3-theme"><i class="fa fa-pencil"></i>  Post</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="Result"></div>
-       
-        <!-- Feed -->
-       
-   
-        <!-- Right Column -->
-        
-    </div>
-</div>
-<br>
-
-<!-- Footer -->
-
-<script>
-
-    // Opens up the notifications dropdown
-    function myFunction(id) {
-        var x = document.getElementById(id);
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-            x.previousElementSibling.className += " w3-theme-d1";
-        } else {
-            x.className = x.className.replace("w3-show", "");
-            x.previousElementSibling.className =
-            x.previousElementSibling.className.replace(" w3-theme-d1", "");
-        }
-    }
-
-    // deletes the post when the trash can is clicked
-    function deletePost(id) {
-        var y = document.getElementById(id);
-        y.style.display = "none";
-    }
-
-    // adds new posts to the feed
-    var x = 0;
-    var array = Array();
-
-    function add_element_to_array(){
-        entry = document.getElementById("text1").value;
-        array.unshift(entry);
-        document.getElementById("text1").value = "";
-
-        var e = "<hr/>";  
-   
-        for (var y=0; y<array.length; y++) {
-            e += '<div id="' + y + '" class="w3-container w3-card w3-white w3-round w3-margin"><br>'
-            + '<img src="https://cdn.pixabay.com/photo/2016/03/31/14/47/avatar-1292817_960_720.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">'
-            + '<h4>You<button href="#" class="w3-right" onclick="deletePost(' + y + ')"><i class="fa fa-trash"></i></button></h4>'
-            + '<hr class="w3-clear">'
-            + '<p>' + array[y] + '</p>'
-            + '<div class="w3-row-padding" style="margin:0 -16px">'
-            + '</div>'
-            + '<button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button>'
-            + '<button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button>'
-            + '</div>'
-        }
-        document.getElementById("Result").innerHTML = e;
-    }
-
-
-    // adds post when the enter key is pressed
-    document.getElementById("text1").onkeypress = function(event){
-        if (event.keyCode == 13 || event.which == 13){
-            add_element_to_array();
-        }
-    };
-</script>
-
-</body>
+            <h3>Leave a Comment</h3>
+          
+            <form action="post_comment.php" method="post" id="commentform">
+          
+              <label for="comment_author" class="required">Your name</label>
+              <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+          
+              <label for="email" class="required">Your email;</label>
+              <input type="email" name="email" id="email" value="" tabindex="2" required="required">
+          
+              <label for="comment" class="required">Your message</label>
+              <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>
+          
+              <-- comment_post_ID value hard-coded as 1 -->
+              <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
+              <input name="submit" type="submit" value="Submit comment" />
+          
+            </form>
+          
+          </div>
+    </body>
+</html>
