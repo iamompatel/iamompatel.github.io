@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="..\CSS/School.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="../JavaScript/common.js" defer></script>
-    <script src="../JavaScript/School.js"></script>
+    <script src="../JavaScript/School.js" defer></script>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
  
@@ -155,35 +155,36 @@
 
             <h3>Leave a Comment</h3>
           
-            <form action="post_comment.php" method="post" id="commentform">
-          
-              <label for="comment_author" class="required">Your Username</label>
-              <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
-          
-          
+            <form>
+
               <label for="comment" class="required">Your message</label>
+
+              <input type="text" name="comment_author" id="review" value="" tabindex="1" required="required">
+
+
               <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>
           
               <!-- comment_post_ID value hard-coded as 1 -->
               <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
-              <input name="submit" type="submit" value="Submit comment" />
+             
           
+
             </form>
+
+            <button name="submit" type="submit" class="submit" id="submit" onclick="submit()">Submit</button>
           
           </div>
         <!-- review sect-->
         <div class="user-cards" data-user-cards-container></div>
-        <template>
-        <div id="">
-            <h3 class="username" data-header></h3>
-            <p class="reviews" data-body></p>
-         </div>
+        <template data-user-template>
+            <div id="">
+                <h3 class="username" data-header></h3>
+                <h6 class="reviews" data-body></h6>
+            </div>
         </template> 
 
     
 </body>
-
-
 
 </html>
 

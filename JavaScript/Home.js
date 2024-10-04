@@ -94,7 +94,7 @@ async function schoolNameClicked(ID) {
         .then((res) => res.text())
         .then((data) => {
           console.log(data)
-          window.location.href = "School.html?ID=" + ID.id;
+          window.location.href = "School.html?ID=" + ID.id + "&Username=" + Username;
         });
     });
 }
