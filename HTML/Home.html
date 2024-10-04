@@ -32,9 +32,9 @@
     <br>
     <button class="id" onclick="Zipclicked()">Zip</button>
     <br>
-    <button class="type" onclick="Typeclicked()">Type</button>
+    <button class="type" id="type" onclick="Typeclicked()">Type</button>
     <br>
-    <button class="type" onclick="Historyclicked()">History</button>
+    <button class="type" id="history" onclick="Historyclicked()">History</button>
     <!--Test-->
   </div>
 
@@ -54,30 +54,6 @@
       </button>
     </a>
   </template>
-
-  <style>
-    @media screen and (max-width: 600px) {
-      .topnav .search-container {
-        float: none;
-      }
-
-      .topnav a,
-      .topnav input[type=text],
-      .topnav .search-container button {
-        float: none;
-        display: block;
-        text-align: left;
-        width: 100%;
-        margin: 0;
-        padding: 14px;
-        color: rgb(13, 255, 0);
-      }
-
-      .topnav input[type=text] {
-        border: 1px solid #ccc;
-      }
-    }
-  </style>
 
 </body>
 

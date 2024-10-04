@@ -5,9 +5,16 @@ body {
   font-family:Courier;
 }
 
-
 #blank {
   color:#ffffff;
+}
+
+#history {
+  width: 100px;
+}
+
+#type {
+  width:70px;
 }
 
 #name {
@@ -18,19 +25,21 @@ body {
   color: rgb(1, 5, 105);
   border-bottom: black;
   margin-top: -46px;
-  padding: 25px;
+  padding:0.5px;
   font-weight: bold;
 }
+
 
 
 .search-container {
   display: flex;
   overflow: hidden;
-  background-color: #bbd1fa;
+  background-color: #c3d8ff;
   justify-content: center;
   height: 100px;
   padding: 10px;
   align-items: center;
+  margin-top:-20px;
 }
 
 .search-container input[type=text] {
@@ -45,6 +54,7 @@ body {
   height: 40px;
   width: 40px;
   background-color: #ffffff;
+  border-radius: 20px;
 }
 
 .search-container button:hover {
@@ -52,7 +62,10 @@ body {
 }
 
 
-
+#search {
+  padding:10px;
+  border-radius: 20px;
+}
 
 
 .skill {
