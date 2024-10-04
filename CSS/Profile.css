@@ -6,7 +6,7 @@
 
 body {
     background-color: #e8f5ff;
-    font-family: Arial;
+    font-family: Courier;
     overflow: hidden;
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 .title {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', Courier;
     padding-top: 15px;
     position: absolute;
     left: 45%;
@@ -132,7 +132,7 @@ body {
 
 .main h2 {
     color: #333;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Courier;
     font-size: 24px;
     margin-bottom: 10px;
 }

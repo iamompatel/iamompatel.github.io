@@ -40,13 +40,13 @@ h1 {
 #name {
     background-color: #c3d8ff;
     text-align: center;
-    font-size: 50px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    font-size: 60px;
+    font-family: Courier;
     color: rgb(1, 5, 105);
     border-bottom: black;
     margin-top: -46px;
     padding: 25px;
-    
+    font-weight: bold;
   }
 
   
