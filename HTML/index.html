@@ -9,19 +9,19 @@
     <link rel="stylesheet" href="../CSS/Sign-in.css">
     <script src="../JavaScript/common.js" defer></script>
     <script src="../JavaScript/Sign-in.js" defer></script>
-    
+
 </head>
 
 <body>
     <div id="name">
         <p>
-          School Scout
+            School Scout
         </p>
-      </div>
+    </div>
     <div class="sign-in">
         <h1>Create Account</h1>
         <!-- <form action="https://script.google.com/macros/s/AKfycbw4Nn0G9COu37MQeVMDt2hynl2rU9GH_yzxLCikpz2UbBuFonO5tbJd-EM3FPH9TSqP/exec" method="post"> -->
-            <form>
+        <form>
             <label class="input"><b>Username</b></label><br>
             <input name="username" id="username"><br>
             <br>
@@ -34,15 +34,19 @@
             <label class="input"><b>Zip Code</b></label><br>
             <input name="zip" id="zip"><br>
             <br>
-            <label class="input"><b>Type of School you are Interested In</b></label><br>
-            <input name="type" id="type"><br>
-            <br>
+            <label class="input"><b>Area of Interest</b></label><br>
+            <select name="repass" id="type">
+                <option value="Technology">Technology</option>
+                <option value="Science">Science</option>
+                <option value="Art">Art</option>
+                <option value="All">All</option>
+            </select><br>
             <label class="input"><b>Email</b></label><br>
             <input name="email" id="email">
             <br>
             <br>
-           
-           
+
+
         </form>
         <a>
             <button class="button" type="submit" onclick="submit()">Submit</button>
@@ -54,7 +58,7 @@
         </p>
     </div>
 
-    
+
 </body>
 
 </html

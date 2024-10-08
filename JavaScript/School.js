@@ -121,3 +121,7 @@ async function submit() {
 
     });
 }
+
+async function HomeClick() {
+    window.location.href = "Home.html?Username=" + Username;
+  }

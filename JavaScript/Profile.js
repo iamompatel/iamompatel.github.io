@@ -46,3 +46,7 @@ window.onload = function() {
                     })
  } )
 }
+
+async function HomeClick() {
+    window.location.href = "Home.html?Username=" + Username;
+  }

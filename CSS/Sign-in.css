@@ -54,3 +54,13 @@ h1 {
     padding: 25px;
     font-weight:bold;
   }
+
+  select{
+    font-size: large;
+    font-variant: small-caps;
+    font-family: Courier;
+    margin-top: 10px;
+    margin-bottom:10px;
+    width:180px;
+    text-align: center;
+  }

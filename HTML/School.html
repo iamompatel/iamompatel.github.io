@@ -11,7 +11,7 @@
     <script src="../JavaScript/School.js" defer></script>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
- 
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
@@ -21,7 +21,7 @@
 
 <body>
     <div class="title">
-        <h1 class="TName" ></h1>
+        <h1 class="TName"></h1>
     </div>
 
     <nav class="sidebar close">
@@ -84,16 +84,18 @@
                         </a>
                     </li>
 
-                    
+
 
                 </ul>
             </div>
 
             <div class="bottom-content">
                 <li class="">
-                    <a href="../HTML/Home.html">
-                        <i class='bx bx-home-alt icon'></i>
-                        <span class="text nav-text">Home</span>
+                    <a>
+                        <button class="homebtn" onclick="HomeClick()">
+                            <i class='bx bx-home-alt icon'></i>
+                            <span class="text nav-text">Home</span>
+                        </button>
                     </a>
                 </li>
                 <li class="">
@@ -103,7 +105,7 @@
                     </a>
                 </li>
 
-                
+
 
             </div>
         </div>
@@ -114,7 +116,7 @@
     <div class="info">
         <div class="intro" id="intro">
             <h2>Introduction</h2>
-            <p class="introP" >  </p>
+            <p class="introP"> </p>
         </div>
 
         <div class="admission" id="admission">
@@ -154,23 +156,23 @@
         <div id="respond">
 
             <h3>Leave a Comment</h3>
-          
+
             <form>
 
-              <label for="comment" class="required">Your message</label>
+                <label for="comment" class="required">Your message</label>
 
-              <input type="text" name="comment_author" id="review" value="" tabindex="1" required="required">
+                <input type="text" name="comment_author" id="review" value="" tabindex="1" required="required">
 
-              <!-- comment_post_ID value hard-coded as 1 -->
-              <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
-             
-          
+                <!-- comment_post_ID value hard-coded as 1 -->
+                <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
+
+
 
             </form>
 
             <button name="submit" type="submit" class="submit" id="submit" onclick="submit()">Submit</button>
-          
-          </div>
+
+        </div>
         <!-- review sect-->
         <div class="user-cards" data-user-cards-container></div>
         <template data-user-template>
@@ -178,14 +180,9 @@
                 <h3 class="username" data-header></h3>
                 <h6 class="reviews" data-body></h6>
             </div>
-        </template> 
+        </template>
 
-    
+
 </body>
 
 </html>
-
-
-
-
-

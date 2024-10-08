@@ -62,6 +62,7 @@ async function submit() {
         // Append the join date to the FormData
         data.append("date", joinDate);
         data.append("history", "none");
+        data.append("type", type);
         fetch(
           API_SIGN_URL,
           {
