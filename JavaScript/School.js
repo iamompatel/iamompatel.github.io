@@ -131,7 +131,7 @@ async function HomeClick() {
     setTimeout(() => {
       // Code to execute after the delay
       loader.classList.add("loader--hidden");
-    }, 2000);
+    }, 3000);
    
   
     loader.addEventListener("transitionend", () => {

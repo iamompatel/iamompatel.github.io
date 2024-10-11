@@ -86,4 +86,7 @@ h1 {
     }
   }
 
+  button:hover{
+    cursor: pointer;
+  }
   

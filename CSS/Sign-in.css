@@ -101,3 +101,8 @@ h1 {
       transform: rotate(1turn);
     }
   }
+
+  button:hover{
+    cursor: pointer;
+  }
+  

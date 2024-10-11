@@ -242,3 +242,8 @@ body {
         transform: rotate(1turn);
     }
 }
+
+button:hover{
+    cursor: pointer;
+  }
+  
