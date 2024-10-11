@@ -72,7 +72,7 @@ async function submit() {
         )
           .then((res) => res.text())
           .then((data) => console.log(data));
-          window.location.href = "Home.html?Username=" + username;
+          window.location.href = "../HTML/Home.html?Username=" + username;
       }
     });
 }
