@@ -81,6 +81,13 @@ body {
   padding-right:30px ;
   border-radius: 28px;
   background-color: rgb(255, 255, 255);
+  transition: height 1s, width 1s, filter 0.75s;
+}
+
+.skill:hover{
+  height: 250px;
+  width: 350px;
+  filter: drop-shadow(8px 8px 10px gray);
 }
 
 .header {
