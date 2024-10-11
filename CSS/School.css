@@ -46,7 +46,7 @@ body.dark .title {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #bee4ff;
+    background-color: #b2dfff;
     width: 100%;
     padding: 30px;
     color: rgb(1, 5, 105);
@@ -64,7 +64,7 @@ body.dark .title {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: white;
+    background-color: #cce9ff;
     width: 100%;
     padding: 30px;
     color: #00598c;
@@ -100,7 +100,7 @@ body.dark .contactI {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #f0eee8;
+    background-color: #cce9ff;
     /*background-image: url(https://www.challengerschool.com/themes/challenger/assets/build/img/video_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;*/
@@ -127,7 +127,7 @@ body.dark .admission {
     flex-direction: row;
     align-items: center;
     text-align: center;
-    background-color: #f0eee8;
+    background-color: #b2dfff;
     width: 100%;
     padding: 30px;
     color: black;
@@ -169,10 +169,10 @@ body.dark .fee {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-image: linear-gradient(175deg, #0b2635 0%, #03272d 25%, #0f3955 50%, #255a6f 75%, #5170a0 100%);
+    background-color: #cce9ff;
     width: 100%;
     padding: 30px;
-    color: white;
+    color: black;
     line-height: 30px;
 }
 
@@ -207,7 +207,7 @@ body.dark .Address {
 
 :root {
     /* ===== Colors ===== */
-    --body-color: #E4E9F7;
+    --body-color: #c4e7ff;
     --sidebar-color: #FFF;
     --primary-color: #695CFE;
     --primary-color-light: #F6F5FF;
@@ -556,8 +556,12 @@ body.dark .home .text {
 }
 
 #review {
-    width: 100px;
     height: 200px;
+}
+
+#review.text {
+    top:0px;
+    position: relative;
 }
 
 .homebtn {
@@ -606,4 +610,22 @@ body.dark .home .text {
     to {
         transform: rotate(1turn);
     }
+}
+
+.template {
+    border: #005587 solid 2px;
+    width:400px;
+    border-radius: 10px;
+    margin:50px;
+    background-color:aliceblue;
+    color:#005587;
+}
+
+.review-text {
+    width:400px;
+}
+
+#comment_post_id {
+    padding-top: -50px;
+    word-break:break-all;
 }

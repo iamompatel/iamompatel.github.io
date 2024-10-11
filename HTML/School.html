@@ -160,8 +160,11 @@
 
             <form>
 
-                <label for="comment" class="required">Your message</label>
+                <div class="review-text">
+                    <label for="comment" class="required">Your message</label>
 
+                </div>
+                
                 <input type="text" name="comment_author" id="review" value="" tabindex="1" required="required">
 
                 <!-- comment_post_ID value hard-coded as 1 -->
@@ -179,9 +182,12 @@
         <div class="user-cards" data-user-cards-container></div>
         <template data-user-template>
             <div id="">
-                <h3 class="username" data-header></h3>
-                <h6 class="reviews" data-body></h6>
+                <div class="template">
+                    <h3 class="username" data-header></h3>
+                    <h6 class="reviews" data-body></h6>
+                </div>  
             </div>
+
         </template>
         
 
