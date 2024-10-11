@@ -95,6 +95,18 @@ async function schoolNameClicked(ID) {
         .then((data) => {
           console.log(data)
           window.location.href = "School.html?ID=" + ID.id + "&Username=" + Username;
+          window.addEventListener("load", () => {
+            const loader = document.querySelector(".loader");
+            setTimeout(() => {
+              // Code to execute after the delay
+              loader.classList.add("loader--hidden");
+            }, 3000);
+           
+          
+            loader.addEventListener("transitionend", () => {
+              document.body.removeChild(loader);
+            });
+          });
         });
     });
 }
@@ -170,4 +182,30 @@ async function Historyclicked() {
 
 async function ProfileClick() {
   window.location.href = "Profile.html?Username=" + Username;
+  window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+    setTimeout(() => {
+      // Code to execute after the delay
+      loader.classList.add("loader--hidden");
+    }, 2000);
+   
+  
+    loader.addEventListener("transitionend", () => {
+      document.body.removeChild(loader);
+    });
+  });
 }
+
+
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+  setTimeout(() => {
+    // Code to execute after the delay
+    loader.classList.add("loader--hidden");
+  }, 2000);
+ 
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});

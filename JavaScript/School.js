@@ -125,3 +125,16 @@ async function submit() {
 async function HomeClick() {
     window.location.href = "Home.html?Username=" + Username;
   }
+
+  window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+    setTimeout(() => {
+      // Code to execute after the delay
+      loader.classList.add("loader--hidden");
+    }, 2000);
+   
+  
+    loader.addEventListener("transitionend", () => {
+      document.body.removeChild(loader);
+    });
+  });

@@ -1,3 +1,18 @@
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+  setTimeout(() => {
+    // Code to execute after the delay
+    loader.classList.add("loader--hidden");
+  }, 0);
+ 
+
+  loader.addEventListener("transitionend", () => {
+    document.body.removeChild(loader);
+  });
+});
+
+
+
 
 async function submit() {
   console.log("submit");
@@ -21,11 +36,11 @@ async function submit() {
   console.log(repass);
   if (password === "") {
     alert("Please enter a password");
-    window.location.href = "Sign-in.html";
+    window.location.href = "index.html";
   }
   if (password !== repass) {
     alert("Passwords do not match");
-    window.location.href = "Sign-in.html";
+    window.location.href = "index.html";
   }
 
   //grab zip code
@@ -52,7 +67,7 @@ async function submit() {
 
       if (data.data.length !== 0 && username === data.data[0].Username) {
         alert("User already Exists try again!!!");
-        window.location.href = "Sign-in.html";
+        window.location.href = "index.html";
       } else {
         let form = document.querySelector("form");
         let data = new FormData(form);
@@ -73,6 +88,18 @@ async function submit() {
           .then((res) => res.text())
           .then((data) => console.log(data));
           window.location.href = "../HTML/Home.html?Username=" + username;
+          window.addEventListener("load", () => {
+            const loader = document.querySelector(".loader");
+            setTimeout(() => {
+              // Code to execute after the delay
+              loader.classList.add("loader--hidden");
+            }, 0);
+           
+          
+            loader.addEventListener("transitionend", () => {
+              document.body.removeChild(loader);
+            });
+          });
       }
     });
 }
