@@ -94,8 +94,9 @@
                     <a>
                         <button class="homebtn" onclick="HomeClick()">
                             <i class='bx bx-home-alt icon'></i>
-                            <span class="text nav-text">Home</span>
+
                         </button>
+                        <span class="text nav-text">Home</span>
                     </a>
                 </li>
                 <li class="">
@@ -181,6 +182,28 @@
                 <h6 class="reviews" data-body></h6>
             </div>
         </template>
+        \
+
+        <script>
+            const body = document.querySelector('body'),
+                sidebar = body.querySelector('nav'),
+                toggle = body.querySelector(".toggle"),
+                searchBtn = body.querySelector(".search-box"),
+                modeSwitch = body.querySelector(".toggle-switch"),
+                modeText = body.querySelector(".mode-text");
+    
+    
+            toggle.addEventListener("click", () => {
+                sidebar.classList.toggle("close");
+            })
+    
+            searchBtn.addEventListener("click", () => {
+                sidebar.classList.remove("close");
+            })
+    
+            
+        </script>
+    
 
 
 </body>
