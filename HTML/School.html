@@ -20,6 +20,13 @@
 </head>
 
 <body>
+    <div id="name">
+        <p>
+            <a href="../HTML/Home.html">
+                School Scout
+            </a>
+        </p>
+    </div>
     <div class="title">
         <h1 class="TName"></h1>
     </div>
@@ -132,6 +139,10 @@
                     <h2>Phone-#</h2>
                     <p class="contactIP"></p>
                 </div>
+                <div class="link">
+                    <h2>School Link <h2>
+                    <p class="link1"></p>
+                </div>
             </div>
 
         </div>
@@ -164,8 +175,9 @@
                     <label for="comment" class="required">Your message</label>
 
                 </div>
-                
-                <textarea type="text" name="comment_author" id="review" value="" tabindex="1" required="required"></textarea>
+
+                <textarea type="text" name="comment_author" id="review" value="" tabindex="1"
+                    required="required"></textarea>
 
                 <!-- comment_post_ID value hard-coded as 1 -->
                 <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
@@ -185,11 +197,11 @@
                 <div class="template">
                     <h3 class="username" data-header></h3>
                     <h6 class="reviews" data-body></h6>
-                </div>  
+                </div>
             </div>
 
         </template>
-        
+
 
         <script>
             const body = document.querySelector('body'),
@@ -198,19 +210,19 @@
                 searchBtn = body.querySelector(".search-box"),
                 modeSwitch = body.querySelector(".toggle-switch"),
                 modeText = body.querySelector(".mode-text");
-    
-    
+
+
             toggle.addEventListener("click", () => {
                 sidebar.classList.toggle("close");
             })
-    
+
             searchBtn.addEventListener("click", () => {
                 sidebar.classList.remove("close");
             })
-    
-            
+
+
         </script>
-    
+
 
 
 </body>

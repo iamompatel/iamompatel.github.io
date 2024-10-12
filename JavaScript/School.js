@@ -47,6 +47,9 @@ window.onload = function () {
 
         const Phone = document.querySelector(".contactIP");
         Phone.textContent = user.Phone;
+
+        const Link = document.querySelector(".link1");
+        Link.textContent = user.Link;
       });
     });
 

@@ -75,6 +75,7 @@ body.dark .title {
     padding: 30px;
     color: #00598c;
     line-height: 30px;
+    
 }
 
 body.dark .contactI {
@@ -97,7 +98,25 @@ body.dark .contactI {
     border-radius: 50px;
     padding: 50px;
     background-color: #ffffff;
+    margin-right: 20px;
 }
+
+.link {
+    border-style: double;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 300px;
+    border-radius: 50px;
+    padding: 50px;
+    background-color: #ffffff;
+}
+
+.link p {
+    font-size:15px;
+}
+
+
+
 
 
 .admission {
@@ -640,3 +659,13 @@ button:hover{
     cursor: pointer;
   }
   
+  #name {
+    background-color: #c3d8ff;
+    text-align: center;
+    font-size: 60px;
+    font-family: Courier;
+    color: rgb(1, 5, 105);
+    border-bottom: black;
+    padding:0.5px;
+    font-weight: bold;
+  }
